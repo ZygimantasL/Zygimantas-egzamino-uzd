@@ -3,6 +3,8 @@ import { ContextWrapper } from "./context/GlobalContext";
 import { PublicLayout } from './layout/PublicLayout';
 import { Page404 } from './pages/Page404';
 import { Home } from './pages/Home';
+import { Register } from './pages/Register';
+import { Login } from './pages/Login';
 
 function App() {
   return (
@@ -11,7 +13,8 @@ function App() {
         <Routes>
           <Route Component={PublicLayout}>
             <Route index path='/' element={<Home />}></Route>
-          <Route Component={PublicLayout}>
+            <Route path='/register' element={<Register />}></Route>
+            <Route path='/login' element={<Login />}></Route>
             <Route path='*' element={<Page404 />}></Route>
           </Route>
         </Routes>
