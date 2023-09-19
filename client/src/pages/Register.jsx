@@ -45,7 +45,7 @@ export function Register() {
         <div className="container">
             <div className="row">
                 <form onSubmit={submitHandler} className="col-12 col-sm-8 col-md-6 col-lg-4 m-auto">
-                    <h1 className="h3 mb-3 fw-normal">Registruotis</h1>
+                    <h1 className="h3 mb-3 fw-normal">Please register</h1>
 
                     <div className="form-floating mb-3">
                         <input onChange={updateFullname} value={fullname} type="text" className="form-control" id="fullname" />
@@ -60,7 +60,7 @@ export function Register() {
                         <label htmlFor="password">Password</label>
                     </div>
 
-                    <button className="btn btn-primary w-100 py-2" type="submit">Registruotis</button>
+                    <button className="btn btn-primary w-100 py-2" type="submit">Register</button>
                 </form>
             </div>
         </div>
