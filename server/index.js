@@ -3,7 +3,7 @@ import cors from 'cors';
 import helmet from 'helmet';
 import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
-import { SERVER_PORT } from './env.js';
+import { SERVER_PORT } from './api/env.js';
 import { api } from './api/api.js';
 
 const app = express();

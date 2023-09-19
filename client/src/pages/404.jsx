@@ -7,7 +7,6 @@ export function NoPage() {
             <h2 className="h4">Page not found</h2>
             <div className="col-lg-6 mx-auto">
                 <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    {/* <Link to="/" type="button" className="btn btn-primary btn-lg px-4 gap-3">Go Home</Link> */}
                 </div>
             </div>
         </div>
