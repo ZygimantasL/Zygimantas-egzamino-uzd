@@ -26,30 +26,30 @@
     npm i
     ```
 
-### `npm run dev`
+## `npm run dev`
 
 Paleidžia programą testavimo rėžimu.\
 Atidaryti [http://localhost:3000](http://localhost:3000) naršyklėje.
 
 Puslapis persikraus esant kodo pasikeitimui
 
-### `Xamp`
+## `Xamp`
 
 Sėkmingam projekto paleidimui su duomenų baze naudojama Xamp programa, jos viduje paleidžiami Apache ir MySQl plėtiniai
 norint pasiekti duombazę ties MySQl dalimi užeinama į admin ir naršyklėje atsiveria duomenų bazė su duomenimis .
 
-### Prisijungimai 
+# Prisijungimai 
 
 norint puslapyje prisijungti prie Admin arba kito userio naudoti 
 
 ## Admin
-# Email 
+### Email 
 ignas@ignas.com
-# Password 
+### Password 
 ignas@ignas.com
 
 ## User
-# Email
+### Email
 linas@adomaitis.lt
-# Password 
+### Password 
 linas@adomaitis.lt
