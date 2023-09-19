@@ -47,6 +47,6 @@ register.post('/', async (req, res) => {
     }
 });
 
-register.use((_req, res, _next) => {
+register.use((req, res, next) => {
     return res.status(404).json({ msg: 'Unsupported "Register" method' });
 });

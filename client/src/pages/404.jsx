@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 export function NoPage() {
     return (
         <div className="px-4 py-5 my-5 text-center">
