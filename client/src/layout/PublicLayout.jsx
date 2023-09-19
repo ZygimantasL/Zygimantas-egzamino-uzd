@@ -6,7 +6,6 @@ export function PublicLayout() {
         <>
             <Header/>
             <main><Outlet /></main>
-            {/* <footer>FOOTER</footer> */}
         </>
     )
 }
