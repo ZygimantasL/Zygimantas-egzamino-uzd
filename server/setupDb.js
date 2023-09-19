@@ -89,6 +89,7 @@ async function specializationsTable(db) {
         const sql = `CREATE TABLE \`specializations\` (
                         id int(10) NOT NULL AUTO_INCREMENT,
                         title varchar(20) NOT NULL,
+                        city varchar(20) NOT NULL,
                         PRIMARY KEY (id)
                     ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4`;
         await db.execute(sql);
@@ -122,9 +123,11 @@ async function generateUsers(db) {
 }
 async function generateSpecializations(db) {
     const specializations = ['Elektrikas', 'Diagnostikas', 'Šaltkalvis'];
+    const cities =['Vilnius', 'Kaunas', 'Laukuva']
     try {
-        const sql = `INSERT INTO \`specializations\` (title) 
-                    VALUES ${specializations.map(s => `("${s}")`).join(', ')};`;
+        const values = specializations.map((title, index) => `("${title}", "${cities[index]}")`).join(', ');
+        const sql = `INSERT INTO \`specializations\` (title, city) VALUES ${values};`
+    
         await db.execute(sql);
     } catch (error) {
         console.log('Nepavyko sugeneruoti "specializations" lenteles turinio');
