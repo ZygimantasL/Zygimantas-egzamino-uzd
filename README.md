@@ -44,7 +44,7 @@ norint puslapyje prisijungti prie Admin arba kito userio naudoti
 
 ## Admin
 ### Email 
-ignas@ignas.com
+v
 ### Password 
 ignas@ignas.com
 
